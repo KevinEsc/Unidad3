@@ -1,0 +1,136 @@
+/* Paleta de colores con variables CSS */
+:root {
+    --color-fondo: #393E46;
+    --color-texto: #FFFFFF;
+    --color-enlace: #ffffff;
+    --color-enlace-hover: #0c0c0c;
+    --color-footer: #2F3645;
+    --color-hover-activo: #000000;
+}
+
+/* Tipografía y fondo */
+body {
+    background: linear-gradient(-45deg, #222831, #393E46, #0e1b1b, #948979);
+    background-size: 400% 400%;
+    animation: fondoAnimado 15s ease infinite;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@keyframes fondoAnimado {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+html {
+    overflow-y: scroll; 
+}
+
+/* Transiciones generales para interactividad */
+a, .btn-primary, .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Enlaces */
+a {
+    color: var(--color-enlace);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-enlace-hover);
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: var(--color-hover-activo);
+    border-color: rgb(19, 56, 19);
+    color: var(--color-texto);
+}
+.btn-primary:hover {
+    background-color: var(--color-enlace-hover);
+    border-color: rgb(8, 48, 8);
+    color: var(--color-texto);
+}
+
+/* Navegación */
+.navbar { 
+    background-color: rgba(255, 255, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--color-texto) !important;
+}
+.nav-link.active {
+    color: var(--color-hover-activo) !important;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    color: var(--color-hover-activo) !important;
+}
+
+/* Sección bienvenida y textos */
+.bienvenida-section,
+.seccion-bienvenida {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 15px;
+    font-size: 18px;
+}
+.bienvenida-section h2 {
+    color: var(--color-texto);
+    margin-bottom: 20px;
+}
+.bienvenida-section img {
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* Imágenes de galería */
+.image-card {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Formulario */
+.form-control {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: var(--color-enlace);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.texto {
+    word-wrap: break-word;
+}
+#gatico{
+    width: 30px;
+}
