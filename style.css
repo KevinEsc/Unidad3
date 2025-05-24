@@ -10,6 +10,9 @@
 
 /* Tipografía y fondo */
 body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
     background: linear-gradient(-45deg, #222831, #393E46, #0e1b1b, #948979);
     background-size: 400% 400%;
     animation: fondoAnimado 15s ease infinite;
@@ -32,11 +35,6 @@ body {
 
 html {
     overflow-y: scroll; 
-}
-
-/* Transiciones generales para interactividad */
-a, .btn-primary, .nav-link {
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 /* Enlaces */
