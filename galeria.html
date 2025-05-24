@@ -13,12 +13,16 @@
             <div class="container-fluid">
                 <!-- Solo logo para móvil y tablet -->
                 <div class="navbar-brand d-md-none">
-                    <img src="imagenes/gatico.png" alt="Logo Gato" id="gatico" class="me-2" />
-                </div>
+                    <a href="index.html">
+                        <img src="imagenes/gatico.png" alt="Logo Gato" id="gatico" class="me-2" />
+                    </a>
+                    </div>
                 <!-- Logo + texto para pantallas grandes -->
                 <div class="navbar-brand d-none d-md-flex align-items-center">
-                    <img src="imagenes/gatico.png" alt="Logo Gato" id="gatico" class="me-2" />
-                    <span class="text-white fw-bold">Fragmentados</span>
+                    <a href="index.html">
+                        <img src="imagenes/gatico.png" alt="Logo Gato" id="gatico" class="me-2" />
+                        <span href="index.html" class="tesxt-white fw-bold">Fragmentados</span>
+                    </a>    
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
@@ -75,14 +79,41 @@
                     </div>
                     <br>
                     <div class="container">
-                        <div class="row">
-                          <div class="col-4"></div>
-                            <div class="col-4">
-                              <button type="button" class="btn btn-outline-secondary">Informacion</button>
+                      <div class="row">
+                        <div class="col-4"></div>
+                          <div class="col-4 text-center">
+                            <!-- Botón para abrir el modal -->
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#infoLouis">
+                            Información
+                            </button>
+                          </div>
+                          <div class="col-4"></div></div>
+                        <!-- Modal -->
+                          <div class="modal fade" id="infoLouis" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content bg-dark text-white">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="infoModalLabel">Información de la Obra</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                  </div>
+                                    <div class="modal-body">
+                                    <h2 class="fs-5">Obras de Louis Wain.</h2>
+                                  <p>
+                                    Las obras que te llegaran son originales echas por Louis Wain.
+                                    </p>
+                                    <h2 class="fs-6">Informacion de Contacto</h2>
+                                  <p>
+                                    Si gustas puedes contactar con su representante a traves de su correo electronico: 
+                                    <a href="mailto:representante@louiswain.com">📨 Representante@LouisWain.com </a>
+                                </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
                             </div>
-                          <div class="col-4"></div>
+                          </div>
                         </div>
-                        <br><br>
+                      <br><br>
                     </div>
                   </div>
                 </div>
@@ -118,13 +149,42 @@
                     </div>
                     <br>
                     <div class="container">
-                        <div class="row">
-                          <div class="col-4"></div>
-                            <div class="col-4">
-                              <button type="button" class="btn btn-outline-secondary">Informacion</button>
+                      <div class="row">
+                        <div class="col-4"></div>
+                          <div class="col-4 text-center">
+                            <!-- Botón para abrir el modal -->
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#infoVicent">
+                            Información
+                            </button>
+                          </div>
+                          <div class="col-4"></div></div>
+                        <!-- Modal -->
+                          <div class="modal fade" id="infoVicent" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content bg-dark text-white">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="infoModalLabel">Información de la Obra</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                  </div>
+                                    <div class="modal-body">
+                                    <h2 class="fs-5">Obras de Vicent Van Gogh.</h2>
+                                  <p>
+                                    Las obras que te llegaran son originales de Vicent Van Gogh.
+
+                                    </p>
+                                    <h2 class="fs-6">Informacion de Contacto</h2>
+                                  <p>
+                                    Si gustas puedes contactar con su representante a traves de su correo electronico: 
+                                    <a href="mailto:representante@vicentvangogh.com">📨 Representante@VicentVanGogh.com </a>
+                                </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
                             </div>
-                          <div class="col-4"></div>
+                          </div>
                         </div>
+                      <br><br>
                     </div>
                     <br><br>
                   </div>
@@ -161,14 +221,41 @@
                     </div>
                     <br>
                     <div class="container">
-                        <div class="row">
-                          <div class="col-4"></div>
-                            <div class="col-4">
-                              <button type="button" class="btn btn-outline-secondary">Informacion</button>
+                      <div class="row">
+                        <div class="col-4"></div>
+                          <div class="col-4 text-center">
+                            <!-- Botón para abrir el modal -->
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#edvard">
+                            Información
+                            </button>
+                          </div>
+                          <div class="col-4"></div></div>
+                        <!-- Modal -->
+                          <div class="modal fade" id="edvard" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content bg-dark text-white">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="infoModalLabel">Información de la Obra</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                  </div>
+                                    <div class="modal-body">
+                                    <h2 class="fs-5">Obras de Edvard Munch.</h2>
+                                  <p>
+                                    Las obras que te llegaran son originales de Edvard Munch.
+                                    </p>
+                                    <h2 class="fs-5">Informacion de Contacto</h2>
+                                  <p>
+                                    Si gustas puedes contactar con su representante a traves de su correo electronico: 
+                                    <a href="mailto:representante@edvardmunch.com">📨 Representante@EdvardMunch.com </a>
+                                </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
                             </div>
-                          <div class="col-4"></div>
+                          </div>
                         </div>
-                        <br><br>
+                      <br><br>
                     </div>
                   </div>
                 </div>
@@ -178,8 +265,10 @@
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
           </script>
+          <script src="main.js"></script>
         <footer>
             &copy; 2024 Galería de Arte. Todos los derechos reservados.
         </footer>
     </body>
 </html>
+
