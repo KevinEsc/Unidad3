@@ -13,7 +13,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     background: linear-gradient(-45deg, #222831, #393E46, #0e1b1b, #948979);
-    background-size: 100% 100%;
+    background-size: 400% 400%;
     animation: fondoAnimado 30s ease infinite;
     will-change: background-position;
     color: white;
