@@ -12,14 +12,19 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-dark">
                 <div class="container-fluid">
-                    <!-- Imagen y nombre del nav -->
-                    <div class="navbar-brand d-md-none">
+                    <!-- Solo logo para móvil y tablet -->
+                <div class="navbar-brand d-md-none">
+                    <a href="index.html">
                         <img src="imagenes/gatico.png" alt="Logo Gato" id="gatico" class="me-2" />
+                    </a>
                     </div>
-                    <div class="navbar-brand d-none d-md-flex align-items-center">
+                <!-- Logo + texto para pantallas grandes -->
+                <div class="navbar-brand d-none d-md-flex align-items-center">
+                    <a href="index.html">
                         <img src="imagenes/gatico.png" alt="Logo Gato" id="gatico" class="me-2" />
-                        <span class="text-white fw-bold">Fragmentados</span>
-                    </div>
+                        <span href="index.html" class="tesxt-white fw-bold">Fragmentados</span>
+                    </a>    
+                </div>
                     <!-- Botón de menú para pantallas pequeñas -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                         <span class="navbar-toggler-icon"></span>
