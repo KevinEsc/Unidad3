@@ -11,11 +11,11 @@
 /* Tipografía y fondo */
 body {
     display: grid;
+    min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
     background: linear-gradient(-45deg, #222831, #393E46, #0e1b1b, #948979);
     background-size: 400% 400%;
-    animation: fondoAnimado 30s ease infinite;
-    will-change: background-position;
+    animation: fondoAnimado 15s ease infinite;
     color: white;
     min-height: 100vh;
     margin: 0;
@@ -23,13 +23,13 @@ body {
 
 @keyframes fondoAnimado {
     0% {
-        background-position: 25% 50%;
+    background-position: 0% 50%;
     }
     50% {
-        background-position: 75% 50%;
+    background-position: 100% 50%;
     }
     100% {
-        background-position: 25% 50%;
+    background-position: 0% 50%;
     }
 }
 
@@ -60,10 +60,11 @@ a:hover {
 
 /* Navegación */
 .navbar { 
-    background-color: rgba(255, 255, 255, 0.3); 
-    position: sticky; top: 0; 
-    z-index: 1030; }
-
+    background-color: rgba(255, 255, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
 
 .navbar-brand, .nav-link {
     color: var(--color-texto) !important;
