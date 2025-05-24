@@ -11,11 +11,11 @@
 /* Tipografía y fondo */
 body {
     display: grid;
-    min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
     background: linear-gradient(-45deg, #222831, #393E46, #0e1b1b, #948979);
-    background-size: 400% 400%;
-    animation: fondoAnimado 15s ease infinite;
+    background-size: 100% 100%;
+    animation: fondoAnimado 30s ease infinite;
+    will-change: background-position;
     color: white;
     min-height: 100vh;
     margin: 0;
@@ -23,13 +23,13 @@ body {
 
 @keyframes fondoAnimado {
     0% {
-    background-position: 0% 50%;
+        background-position: 25% 50%;
     }
     50% {
-    background-position: 100% 50%;
+        background-position: 75% 50%;
     }
     100% {
-    background-position: 0% 50%;
+        background-position: 25% 50%;
     }
 }
 
