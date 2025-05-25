@@ -34,7 +34,7 @@ body {
 }
 
 html {
-    overflow-y: scroll; 
+    overflow-y: scroll;
 }
 
 /* Enlaces */
@@ -59,8 +59,12 @@ a:hover {
 }
 
 /* Navegación */
-.navbar { 
-    background-color: rgba(255, 255, 255, 0.3);
+.navbar {
+    /* Tu CSS de navbar hace que sea semitransparente, lo que es un fondo claro. */
+    /* Si realmente quieres que sea oscuro como en el HTML (bg-dark),
+       entonces quita esta propiedad background-color y deja que Bootstrap maneje bg-dark.
+       Si quieres que sea semitransparente, entonces este CSS es correcto. */
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco semitransparente */
     position: sticky;
     top: 0;
     z-index: 1030;
@@ -131,4 +135,7 @@ footer {
 }
 #gatico{
     width: 30px;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
