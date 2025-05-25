@@ -55,7 +55,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-6">
-                        <form class="row g-3">
+                        <form class="row g-3 formulario-contacto">
                             <div class="col-6">
                                 <label for="nombre" class="form-label">Nombre</label>
                                 <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Escriba su nombre" required>
@@ -71,10 +71,10 @@
                             <div class="col-12">
                                 <label for="solicitud" class="form-label">Tipo de Solicitud:</label>
                                 <select id="solicitud" class="form-select" required>
-                                    <option selected aria-atomic="true">Seleccione una opción</option>
-                                    <option>Compra</option>
-                                    <option>Consulta</option>
-                                    <option>Venta</option>
+                                    <option value="" selected disabled>Seleccione una opción</option>
+                                    <option value="compra">Compra</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="venta">Venta</option>
                                 </select>
                             </div>
                             <div>
